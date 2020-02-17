@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: '@profileActive@'
+  application:
+    name: hong
+
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    inetutils:
+      timeout-seconds: 5
+
+# web port
+server:
+  port: 9572
+
+# log config
+logging:
+  config: classpath:logback-spring.xml
+
